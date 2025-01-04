@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       {/* banner */}
-      <section id="/">
+      <section id="/" className="">
         <Banner />
       </section>
 

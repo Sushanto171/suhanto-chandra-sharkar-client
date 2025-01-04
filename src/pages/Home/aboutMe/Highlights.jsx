@@ -23,11 +23,10 @@ const Highlights = () => {
   ];
 
   return (
-    <section className="py-12 md:px-12 text-secondary">
+    <section className="py-6 md:p-12 text-secondary">
       {/* Heading */}
-      <h2 className="text-2xl font-bold text-left  text-primary mb-8 flex items-center gap-2 justify-start ">
-        Here are a Few Highlights:
-        <FaHandPointRight className="" />
+      <h2 className="text-2xl font-bold text-left  text-primary sm:mb-8  ">
+        Here are a Few Highlights: <FaHandPointRight className="inline-block" />
       </h2>
       <div className="max-w-xl ">
         {/* Highlights List */}
@@ -35,7 +34,7 @@ const Highlights = () => {
           {highlights.map((highlight, index) => (
             <li
               key={index}
-              className="flex items-center gap-4 p-4  rounded-md shadow-sm hover:shadow-hover hover:shadow-md transition duration-300"
+              className="flex items-center gap-4 p-2 sm:p-4  rounded-md shadow-sm hover:shadow-hover hover:shadow-md transition duration-300"
             >
               <div className="text-accent text-lg">{highlight.icon}</div>
               <p className="text-lg text-secondary">{highlight.text}</p>

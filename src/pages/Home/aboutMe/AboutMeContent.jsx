@@ -1,7 +1,7 @@
 import Highlights from "./Highlights";
 const AboutMeContent = () => {
   return (
-    <div className="text-secondary">
+    <div className="text-secondary px-3">
       {/* Content */}
       <p className=" sm:text-lg md:text-xl leading-relaxed mb-4">
         Hello! I’m

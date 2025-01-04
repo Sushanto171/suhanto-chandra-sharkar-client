@@ -35,8 +35,8 @@ const Navbar = () => {
   return (
     <>
       <nav className="sticky top-2 z-20">
-        <div className="py-1 sm:py-2 md:py-3 lg:py-5 border border-accent w-fit hover:shadow-slate-500 hover:shadow-inner bg-[#] transition-all duration-200 ease-linear  mx-auto px-2 sm:px-6 rounded-full backdrop-blur-3xl">
-          <ul className="flex gap-3 sm:gap-5 items-center font-medium">
+        <div className="py-2 px-4 md:py-3 lg:py-5 border border-opacity-40 hover:border-opacity-80 border-accent w-fit hover:shadow-slate-500 hover:shadow-inner bg-[#] transition-all duration-200 ease-linear  mx-auto sm:px-6 lg:px-12 rounded-full backdrop-blur-3xl">
+          <ul className="flex gap-5 items-center font-medium">
             <li>
               <NavLink
                 onClick={() => scrollToView("home")}
@@ -95,7 +95,7 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="flex-1 text-right flex justify-end">
-              <DownloadCV size={"sm"} px={"2"} />
+              <DownloadCV size={"sm"} px={"4"} />
             </li>
           </ul>
         </div>

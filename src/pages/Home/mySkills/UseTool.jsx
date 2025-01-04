@@ -13,16 +13,16 @@ const UseTool = () => {
     { icon: <RiVercelLine />, name: "Vercel" },
   ];
   return (
-    <>
-      <h3 className="text-2xl font-bold text-left  text-primary mb-8 flex items-center gap-2 justify-start ">
-        Tools I Use
+    <div>
+      <h3 className="text-2xl font-bold text-left  text-primary mb-8 flex items-center gap-2 justify-start text-opacity-80">
+        Tools I Use:
       </h3>
       <div className="flex items-center flex-wrap gap-5 sm:gap-8 md:gap-12 lg:gap-20 justify-center ">
         {icons.map((icon, i) => (
           <SkillCard key={i} icon={icon} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

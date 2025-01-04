@@ -10,7 +10,7 @@ const SendEmail = () => {
     const name = form.user_name.value;
     const email = form.user_email.value;
     const message = form.message.value;
-    console.log({ name, email, message });
+
     const templateParams = {
       from_name: name,
       from_email: email,

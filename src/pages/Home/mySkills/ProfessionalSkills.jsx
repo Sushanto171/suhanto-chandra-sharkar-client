@@ -13,16 +13,16 @@ const ProfessionalSkills = () => {
     { icon: <SiMongodb />, name: "MongoDB" },
   ];
   return (
-    <>
-      <h3 className="text-2xl font-bold text-left  text-primary mb-8 flex items-center gap-2 justify-start ">
-        Professional Skillset
+    <div>
+      <h3 className="text-2xl font-bold text-left text-opacity-80 text-primary mb-8 flex items-center gap-2 justify-start ">
+        Professional Skillset:
       </h3>
       <div className="flex items-center flex-wrap gap-5 sm:gap-8 md:gap-12 lg:gap-20 justify-center ">
         {icons.map((icon) => (
           <SkillCard key={icon.name} icon={icon} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
