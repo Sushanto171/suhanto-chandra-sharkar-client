@@ -5,7 +5,7 @@ import Navbar from "./../components/Navbar";
 const MainLayout = () => {
   return (
     <Container bg={"#121212"}>
-      <div className="h-[30000px]" id="home">
+      <div id="home">
         {/* navbar */}
         <Navbar />
 

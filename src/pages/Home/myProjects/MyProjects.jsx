@@ -1,5 +1,13 @@
+import SectionTitle from "../../../components/SectionTitle";
+
 const MyProjects = () => {
-  return <div>My projects</div>;
+  return (
+    <>
+      <div className="pt-24">
+        <SectionTitle label="My Projects" />
+      </div>
+    </>
+  );
 };
 
 export default MyProjects;

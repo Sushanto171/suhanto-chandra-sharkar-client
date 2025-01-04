@@ -1,5 +1,13 @@
+import SectionTitle from "../../../components/SectionTitle";
+
 const Contact = () => {
-  return <div>contact</div>;
+  return (
+    <>
+      <div className="pt-24">
+        <SectionTitle label="Contact with Me" />
+      </div>
+    </>
+  );
 };
 
 export default Contact;

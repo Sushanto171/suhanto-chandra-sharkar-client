@@ -13,22 +13,22 @@ const Home = () => {
       </section>
 
       {/* about me */}
-      <section id="about-me" className="h-[1200px]">
+      <section id="about-me" className="">
         <AboutMe />
       </section>
 
       {/* my skills */}
-      <section id="my-skills" className="h-[1200px]">
+      <section id="my-skills" className="">
         <MySkills />
       </section>
 
       {/* my project */}
-      <section id="my-projects" className="h-[1200px]">
+      <section id="my-projects" className="">
         <MyProjects />
       </section>
 
       {/* contact  */}
-      <section id="contact" className="h-[1200px]">
+      <section id="contact" className="">
         <Contact />
       </section>
     </>
