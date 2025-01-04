@@ -18,8 +18,8 @@ const ProfessionalSkills = () => {
         Professional Skillset
       </h3>
       <div className="flex items-center flex-wrap gap-5 sm:gap-8 md:gap-12 lg:gap-20 justify-center ">
-        {icons.map((icon, i) => (
-          <SkillCard key={i} icon={icon} />
+        {icons.map((icon) => (
+          <SkillCard key={icon.name} icon={icon} />
         ))}
       </div>
     </>

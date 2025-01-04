@@ -43,7 +43,7 @@ const BannerContent = () => {
       {/* Call-to-Action Button */}
       <div className="mt-6 flex gap-4">
         <button
-          onClick={() => scrollToView("contact")}
+          onClick={() => scrollToView("email")}
           className="btn btn-outline transition-all duration-300 flex justify-center items-center hover:bg-accent text-accent hover:border-hover"
         >
           Send Email <SiMinutemailer className="" size={20} />

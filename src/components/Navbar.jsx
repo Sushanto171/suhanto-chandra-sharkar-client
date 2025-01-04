@@ -52,35 +52,35 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                onClick={() => scrollToView("about-me")}
+                onClick={() => scrollToView("about")}
                 className={`${
-                  section === "about-me" ? "text-accent" : ""
+                  section === "about" ? "text-accent" : ""
                 } flex  justify-center gap-1 items-center`}
               >
                 <CgProfile />
-                <span className="hidden sm:block"> About me</span>
+                <span className="hidden sm:block"> About</span>
               </NavLink>
             </li>
             <li>
               <NavLink
-                onClick={() => scrollToView("my-skills")}
+                onClick={() => scrollToView("skills")}
                 className={`${
-                  section === "my-skills" ? "text-accent" : ""
+                  section === "skills" ? "text-accent" : ""
                 } flex  justify-center gap-1 items-center`}
               >
                 <MdManageAccounts size={20} />
-                <span className="hidden sm:block"> My Skills</span>
+                <span className="hidden sm:block">Skills</span>
               </NavLink>
             </li>
             <li>
               <NavLink
-                onClick={() => scrollToView("my-projects")}
+                onClick={() => scrollToView("projects")}
                 className={`${
-                  section === "my-projects" ? "text-accent" : ""
+                  section === "projects" ? "text-accent" : ""
                 } flex  justify-center gap-1 items-center`}
               >
                 <GrProjects />
-                <span className="hidden sm:block"> My Project</span>
+                <span className="hidden sm:block"> Project</span>
               </NavLink>
             </li>
             <li>
