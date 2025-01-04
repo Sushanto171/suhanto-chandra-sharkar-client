@@ -35,7 +35,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="sticky top-2 z-20">
-        <div className="py-1 sm:py-2 md:py-3 lg:py-5 border border-secondary w-fit hover:shadow-slate-500 hover:shadow-inner bg-[#] transition-all duration-200 ease-linear  mx-auto px-2 sm:px-6 rounded-full backdrop-blur-3xl">
+        <div className="py-1 sm:py-2 md:py-3 lg:py-5 border border-accent w-fit hover:shadow-slate-500 hover:shadow-inner bg-[#] transition-all duration-200 ease-linear  mx-auto px-2 sm:px-6 rounded-full backdrop-blur-3xl">
           <ul className="flex gap-3 sm:gap-5 items-center font-medium">
             <li>
               <NavLink
