@@ -10,11 +10,14 @@ const MyProjects = () => {
       .then((res) => res.json())
       .then((data) => setProjects(data));
   }, []);
+  useEffect(() => {
+    scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   return (
     <>
       <div className="pt-24">
         <SectionTitle label="My Projects" />
-        <div className="grid md:grid-cols-2 mt-16 gap-8">
+        <div className="grid md:grid-cols-2 mt-16 gap-12">
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}

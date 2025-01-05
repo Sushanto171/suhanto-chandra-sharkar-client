@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import AboutMe from "../aboutMe/AboutMe";
 import Banner from "../banner/Banner";
 import Contact from "../contact/Contact";
@@ -5,6 +6,9 @@ import MyProjects from "./../myProjects/MyProjects";
 import MySkills from "./../mySkills/MySkills";
 
 const Home = () => {
+  useEffect(() => {
+    scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   return (
     <>
       {/* banner */}

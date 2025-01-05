@@ -9,7 +9,6 @@ import DownloadCV from "./DownloadCV";
 const Navbar = () => {
   const navigate = useNavigate();
   const [section, setSection] = useState("home");
-
   // section observer
   useEffect(() => {
     const sections = document.querySelectorAll("section");
@@ -24,7 +23,7 @@ const Navbar = () => {
         });
       },
       {
-        threshold: 0, // Trigger when 60% of the section is visible
+        threshold: 0.5, // Trigger when 60% of the section is visible
       }
     );
 

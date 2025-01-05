@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import SectionTitle from "../../../components/SectionTitle";
 import ConnectWithSocial from "./ConnectWithSocial";
 import SendEmail from "./SendEmail";
 
 const Contact = () => {
+  useEffect(() => {
+    scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   return (
     <>
       <div className="pt-24">

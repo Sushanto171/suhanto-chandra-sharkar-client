@@ -1,4 +1,5 @@
 import { BsDashLg } from "react-icons/bs";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiMinutemailer } from "react-icons/si";
 import Typewriter from "typewriter-effect";
 import DownloadCV from "../../../components/DownloadCV";
@@ -27,6 +28,7 @@ const BannerContent = () => {
           <Typewriter
             options={{
               strings: [
+                "Frontend Developer",
                 "An Aspiring Developer",
                 "A Passionate Learner",
                 "A Creative Thinker",
@@ -44,13 +46,36 @@ const BannerContent = () => {
       <div className="mt-6 flex gap-4">
         <button
           onClick={() => scrollToView("email")}
-          className="btn btn-outline transition-all duration-300 flex justify-center items-center hover:bg-accent text-accent hover:border-hover"
+          className="btn btn-outline rounded-full transition-all duration-300 flex justify-center items-center hover:bg-accent text-accent hover:border-hover"
         >
           Send Email <SiMinutemailer className="" size={20} />
         </button>
         <span>
           <DownloadCV size={"md"} px={"2"} bg={"accent"} />
         </span>
+      </div>
+      <div className="flex gap-12 justify-center md:justify-start w-full text-2xl  my-6 md:mt-12">
+        <a
+          className="btn btn-outline rounded-full text-xl text-accent hover:bg-hover hover:text-accent"
+          href="https://github.com/Sushanto171"
+          target="_blank"
+        >
+          <FaGithub />
+        </a>
+        <a
+          className="btn btn-outline rounded-full text-xl text-accent hover:bg-hover hover:text-accent"
+          href="https://www.linkedin.com/in/sushanto-chandra-sharkar-144b95339/"
+          target="_blank"
+        >
+          <FaLinkedin />
+        </a>
+        <a
+          className="btn btn-outline rounded-full text-xl text-accent hover:bg-hover hover:text-accent"
+          href="https://web.facebook.com/Sushantochandrasharkar.me/"
+          target="_blank"
+        >
+          <FaFacebook />
+        </a>
       </div>
     </section>
   );
