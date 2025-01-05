@@ -13,7 +13,7 @@ const Banner = () => {
           <div className="relative bg-white/30 sm:w-80 sm:h-80 rounded-full">
             <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent rounded-full border-4 -bottom-1 border-accent"></div>
             <img
-              className="rounded-full w-72 h-72 sm:w-80 object-contain sm:h-80 border-black"
+              className="rounded-full w-72 h-72 sm:w-80 object-contain sm:h-80 "
               src={me}
               alt=""
             />

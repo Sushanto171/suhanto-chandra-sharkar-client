@@ -6,7 +6,7 @@ import { scrollToView } from "../../../utilis/utilis";
 
 const BannerContent = () => {
   return (
-    <section className="flex flex-col items-center justify-center text-center md:text-left md:items-start px-4 pb-6  sm:py-12 bg-gradient-to-r  min-h-[70vh]">
+    <section className="flex flex-col items-center justify-center text-center md:text-left md:items-start px-4 pb-6 h-fit sm:py-12 bg-gradient-to-r  min-h-[70vh]">
       {/* Main Heading */}
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-wide leading-tight text-primary">
         Hello, I’m <span className="text-accent">Sushanto</span>

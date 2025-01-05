@@ -1,0 +1,71 @@
+[
+  {
+    "id": 1,
+    "name": "Joystick Journals",
+    "title": "Joystick Journals: A Coupon Collecting Application",
+    "description": "A user-friendly game review platform for gaming enthusiasts. Explore, share, and manage game reviews with ease while enjoying a clean and responsive interface. Designed to provide a 'chill' experience for all users.",
+    "key_features": [
+      "Firebase Authentication: Secure and reliable user authentication (Email/Password, Google, etc.)",
+      "Review Management: Add, edit, and delete game reviews effortlessly.",
+      "Highest Rated Games Section: Display top-rated games for easy discovery.",
+      "Responsive Design: Ensures smooth functionality across all devices.",
+      "Interactive UI: Built with React and TailwindCSS for a modern and engaging design."
+    ],
+    "client_technologies": [
+      "React",
+      "Vite",
+      "TailwindCSS",
+      "Firebase Authentication",
+      "Visual Studio Code",
+      "Git and GitHub"
+    ],
+    "backend_technologies": ["Express.js", "MongoDB"],
+    "live_link": "https://joystick-journals.web.app/",
+    "client_repo": "https://github.com/programming-hero-web-course2/b10-a10-client-side-Sushanto171",
+    "server_repo": "https://github.com/programming-hero-web-course2/b10-a10-server-side-Sushanto171",
+    "image": "https://i.ibb.co.com/Mf0D04b/joystick-jurnals.png"
+  },
+  {
+    "id": 2,
+    "name": "Impact Makers",
+    "title": "Impact Makers: Empowering Volunteer Engagement",
+    "description": "ImpactMakers is a platform that aims to connect organizations, communities, and individuals who are passionate about making a difference. The platform allows users to:\n\nCreate Volunteer Need Posts: Organizations and individuals can post volunteer opportunities, providing detailed descriptions of the tasks and requirements.\n\nUpdate & Delete Posts: Users have the ability to edit or remove their volunteer posts as needed.\n\nSign Up as Volunteers: Users can browse available posts and sign up to contribute their time, skills, and passion to causes they care about.",
+    "key_features": [
+      "Volunteer Post Creation: Organizations and individuals can post detailed volunteer needs, making it easy to communicate their requirements.",
+      "Volunteer Sign-up System: Users can browse available opportunities and sign up seamlessly to make a meaningful impact.",
+      "Interactive Management: Personalized dashboards for both volunteers and organizers to track progress and manage tasks.",
+      "User Authentication: Secure user login and registration system, including Google OAuth for easy access.",
+      "Monthly Calendar View: Effortlessly view upcoming events with a user-friendly calendar integration.",
+      "Blogs Section: Stay informed and inspired with blogs highlighting success stories, volunteer tips, and community updates."
+    ],
+    "client_technologies": [
+      "React",
+      "TailwindCSS",
+      "DaisyUI",
+      "Axios",
+      "GoogleAuth"
+    ],
+    "backend_technologies": ["Express.js", "MongoDB", "Vercel"],
+    "live_link": "https://login-signup-form-auth.web.app/",
+    "client_repo": "https://github.com/programming-hero-web-course2/b10a11-client-side-Sushanto171",
+    "server_repo": "https://github.com/programming-hero-web-course2/b10a11-server-side-Sushanto171",
+    "image": "https://i.ibb.co.com/6N8WcS0/impack-makers.png"
+  },
+  {
+    "id": 3,
+    "name": "Discount Pro",
+    "title": "Discount PRO: A Coupon Collecting Application",
+    "description": "This project is a simple Coupon Collecting Application designed to help users easily find and use discount coupons for popular E-commerce shops in Bangladesh. There are a lot of E-commerce stores that provide various types of vouchers and coupon codes for discounts. Our application will collect all the coupons available on each store so that people can easily achieve discounts and save money.",
+    "key_features": [
+      "Email and Google Login: Users can sign up or log in securely using their email address or Google account through Firebase Authentication.",
+      "Browse Coupons by Brand: Users can view a curated list of e-commerce stores offering coupons.",
+      "Brand-Specific Coupons: Coupons are categorized by brands, making it easy for users to locate deals for their preferred stores.",
+      "Responsive and Intuitive Interface: Mobile-Friendly Design: The application is fully responsive, providing a seamless experience on both desktop and mobile devices.",
+      "Profile Management: User can update profile information."
+    ],
+    "client_technologies": ["React.js", "TailwindCSS", "DaisyUI"],
+    "live_link": "https://coupon-collection-auth.web.app/",
+    "client_repo": "https://github.com/programming-hero-web-course1/b10-a9-authentication-Sushanto171",
+    "image": "https://i.ibb.co.com/z2RCV6h/discount-pro.png"
+  }
+]

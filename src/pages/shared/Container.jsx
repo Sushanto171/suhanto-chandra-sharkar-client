@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const Container = ({ children }) => {
   return (
     <div className="bg-background">
-      <div className="max-w-screen-lg px-1 md:px-2 pt-2 lg:px-0 mx-auto">
+      <div className="max-w-screen-lg px-2 pt-2 lg:px-0 mx-auto">
         {children}
       </div>
     </div>

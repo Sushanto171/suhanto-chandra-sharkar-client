@@ -16,6 +16,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/project/:id",
+        loader: () => fetch("/projects.json"),
         element: <ProjectDetails />,
       },
     ],
