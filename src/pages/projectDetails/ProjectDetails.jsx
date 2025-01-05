@@ -13,6 +13,10 @@ const ProjectDetails = () => {
     setLoading(false);
   }, [id, projects]);
   const { name, client_repo, server_repo, live_link } = project[0] || [];
+
+  useEffect(() => {
+    scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   if (loading) return <h1>Loading</h1>;
   return (
     <div className="container mx-auto p-6">
