@@ -18,7 +18,7 @@ const ConnectWithSocial = () => {
             <FaGithub />
           </a>
           <a
-            href="https://www.linkedin.com/in/sushanto-chandra-sharkar-144b95339/"
+            href="https://www.linkedin.com/in/sushanto-kumar171/"
             target="_blank"
           >
             <FaLinkedin />

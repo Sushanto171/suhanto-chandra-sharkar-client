@@ -64,7 +64,7 @@ const BannerContent = () => {
         </a>
         <a
           className="btn btn-outline rounded-full text-xl text-accent hover:bg-hover hover:text-accent"
-          href="https://www.linkedin.com/in/sushanto-chandra-sharkar-144b95339/"
+          href="https://www.linkedin.com/in/sushanto-kumar171/"
           target="_blank"
         >
           <FaLinkedin />

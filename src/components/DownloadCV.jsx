@@ -5,8 +5,10 @@ const DownloadCV = ({ px, size }) => {
   return (
     <a
       target="_blank"
-      href="https://docs.google.com/document/d/1Vop6F21_VKgMG3TZcv-XFyuCnOJPPd1IU6kQEl4dTHQ/edit?usp=sharing"
-      className={`btn font-medium btn-${size} font-medium tracking-wider flex gap-0 rounded-full bg-accent hover:border-accent hover:text-secondary hover:bg-hover text-white md:gap-3 items-center px-2 sm:px-${px} md:px-5`}
+      href="https://drive.google.com/file/d/1Q9uDeH6vM0QJlwiElCmCAAIHqSf5G4Uj/view?usp=sharing"
+      className={`btn font-medium ${
+        size === "navbar" ? "btn-sm sm:btn-md" : ""
+      }  tracking-wider flex gap-0 rounded-full bg-accent hover:border-accent hover:text-secondary hover:bg-hover text-white md:gap-3 items-center px-2 sm:px-${px} md:px-5`}
     >
       Resume
       <GoArrowDown size={18} />

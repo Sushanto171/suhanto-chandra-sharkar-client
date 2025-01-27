@@ -9,6 +9,15 @@ import DownloadCV from "./DownloadCV";
 const Navbar = () => {
   const navigate = useNavigate();
   const [section, setSection] = useState("home");
+  const [scroll, setScroll] = useState(0);
+
+  useEffect(() => {
+    const isScroll = () => {
+      setScroll(window.scrollY);
+    };
+    window.addEventListener("scroll", isScroll);
+    return () => window.removeEventListener("scroll", isScroll);
+  }, []);
   // section observer
   useEffect(() => {
     const sections = document.querySelectorAll("section");
@@ -31,11 +40,16 @@ const Navbar = () => {
 
     return () => observer.disconnect();
   }, [navigate]);
+
   return (
     <>
-      <nav className="sticky top-2 z-20">
-        <div className="py-2 px-4 md:py-3 lg:py-5 border border-opacity-40 hover:border-opacity-80 border-accent w-fit hover:shadow-slate-500 hover:shadow-inner bg-[#] transition-all duration-200 ease-linear  mx-auto sm:px-6 lg:px-12 rounded-full backdrop-blur-3xl">
-          <ul className="flex gap-5 items-center font-medium">
+      <nav className="sticky top-0.5 z-20 pb-1">
+        <div
+          className={`px-4 py-2 md:py-3 lg:py-5  border-opacity-40 hover:border-opacity-80 border-accent ${
+            scroll > 200 ? "w-fit rounded-full border" : "w-full"
+          }  hover:shadow-slate-500 hover:shadow-inner bg-[#] transition-all duration-300 ease-linear  mx-auto sm:px-6 lg:px-12 backdrop-blur-3xl`}
+        >
+          <ul className="max-w-screen-lg mx-auto flex gap-5 items-center font-medium">
             <li>
               <NavLink
                 onClick={() => scrollToView("home")}
@@ -94,133 +108,11 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="flex-1 text-right flex justify-end">
-              <DownloadCV size={"sm"} px={"4"} />
+              <DownloadCV size={"navbar"} px={"4"} />
             </li>
           </ul>
         </div>
       </nav>
-      {/* <div className="flex justify-end">
-        <nav className=" sm:hidden fixed top-20 z-20 ">
-          <div className="relative py-5shadow-inner hover:bg-[#3436487e] transition-all duration-200 ease-linear max-w-fit  px-6 rounded backdrop-blur-3xl">
-            <ul className="flex flex-col gap-5">
-              <li>
-                <NavLink>Home </NavLink>
-              </li>
-              <li>
-                <NavLink>About me </NavLink>
-              </li>
-              <li>
-                <NavLink>My Skills </NavLink>
-              </li>
-              <li>
-                <NavLink>My Projects </NavLink>
-              </li>
-              <li>
-                <NavLink>Contact </NavLink>
-              </li>
-            </ul>
-            <div className="absolute rotate-[90deg] -z-2 h-96 bottom-0- w-full divider"></div>
-          </div>
-        </nav>
-      </div> */}
-
-      {/* <div className="sm:hidden  fixed bottom-20 -right-10 z-10">
-        <ul className="timeline timeline-vertical px-0 w-32">
-          <li>
-            <div className="timeline-start timeline-box">Home</div>
-            <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-            <hr />
-          </li>
-          <li>
-            <hr />
-            <div className="timeline-start timeline-box">iMac</div>
-            <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-            <hr />
-          </li>
-          <li>
-            <hr />
-            <div className="timeline-start timeline-box">iPod</div>
-            <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-            <hr />
-          </li>
-          <li>
-            <hr />
-            <div className="timeline-start timeline-box">iPhone</div>
-            <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-            <hr />
-          </li>
-          <li>
-            <hr />
-            <div className="timeline-start timeline-box">Apple Watch</div>
-            <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-          </li>
-        </ul>
-      </div> */}
     </>
   );
 };

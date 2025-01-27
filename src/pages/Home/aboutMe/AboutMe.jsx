@@ -7,7 +7,7 @@ const AboutMe = () => {
   }, []);
   return (
     <>
-      <div className="pt-12 sm:pt-24">
+      <div className="pt-12 sm:pt-16">
         <SectionTitle label="About Me" />
         <div className="mt-6 sm:mt-12">
           <AboutMeContent />
