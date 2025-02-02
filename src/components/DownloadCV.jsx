@@ -5,7 +5,7 @@ const DownloadCV = ({ px, size }) => {
   return (
     <a
       target="_blank"
-      href="https://drive.google.com/file/d/1Q9uDeH6vM0QJlwiElCmCAAIHqSf5G4Uj/view?usp=sharing"
+      href="https://drive.google.com/file/d/1oQntZHahET8dZCmaVC59PJbHcnhVOPme/view?usp=sharing"
       className={`btn font-medium ${
         size === "navbar" ? "btn-sm sm:btn-md" : ""
       }  tracking-wider flex gap-0 rounded-full bg-accent hover:border-accent hover:text-secondary hover:bg-hover text-white md:gap-3 items-center px-2 sm:px-${px} md:px-5`}
