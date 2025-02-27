@@ -1,6 +1,56 @@
 [
   {
     "id": 1,
+    "name": "MediCamp",
+    "title": "MediCamp: A Medical Camp Management System",
+    "description": "MediCamp is a comprehensive MERN stack application designed to efficiently manage medical camps. The platform includes features for both organizers and participants, emphasizing seamless interaction, secure payment, and robust analytics.",
+    "adminCredentials": { "email": "info@medicamp.com", "password": "123Ab@" },
+    "key_features": [
+      "Organizer Profile: Manage personal information and camp details.",
+      "Add a Camp: Organizers can create new camps with all relevant details.",
+      "Manage Camps: Update or delete camp information, View real-time registrations.",
+      "Manage Registered Camps: Confirm or delete participant registrations, Handle conditional payments for special cases.",
+      "Participant Profile: Manage personal details easily.",
+      "Registered Camps: Access a list of registered camps with detailed information.",
+      "Secure Payments: Utilize Stripe for safe and seamless payment processing.",
+      "Feedback System: After payment, participants can submit feedback to improve the camp experience.",
+      "Payment History: Track all payment transactions with full details.",
+      "Analytics: Get insights into participation through charts and visual overviews.",
+      "Responsive Design: Ensures smooth functionality across all devices.",
+      "Role-Based Access Control (RBAC): Organizers and participants have role-specific features.",
+      "Pagination: All tables feature pagination at the footer, displaying 10 rows per page for better usability`.",
+      "Search Functionality: Search for camps by name, location, or date.",
+      "Interactive UI: Built with React and TailwindCSS for a modern and engaging design.",
+      "Reusable Components: Built reusable components for search and pagination to ensure consistency and scalability"
+    ],
+    "client_technologies": [
+      "React",
+      "Vite",
+      "TailwindCSS",
+      "Material Tailwind",
+      "Material Tailwind",
+      "React Context API",
+      "TanStack Query",
+      "Stripe Payment Gateway",
+      "Firebase Authentication",
+      "Visual Studio Code",
+      "Git and GitHub"
+    ],
+    "backend_technologies": [
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Stripe",
+      "CORS",
+      "dotenv"
+    ],
+    "live_link": "https://medicamp-91966.web.app",
+    "client_repo": "https://github.com/Sushanto171/medicamp",
+    "server_repo": "https://github.com/Sushanto171/medicamp-server",
+    "image": "https://i.ibb.co.com/Rn11mfL/image.png"
+  },
+  {
+    "id": 2,
     "name": "Joystick Journals",
     "title": "Joystick Journals: A Coupon Collecting Application",
     "description": "A user-friendly game review platform for gaming enthusiasts. Explore, share, and manage game reviews with ease while enjoying a clean and responsive interface. Designed to provide a 'chill' experience for all users.",
@@ -21,12 +71,12 @@
     ],
     "backend_technologies": ["Express.js", "MongoDB"],
     "live_link": "https://joystick-journals.web.app/",
-    "client_repo": "https://github.com/programming-hero-web-course2/b10-a10-client-side-Sushanto171",
-    "server_repo": "https://github.com/programming-hero-web-course2/b10-a10-server-side-Sushanto171",
+    "client_repo": "https://github.com/Sushanto171/joystick-journals",
+    "server_repo": "https://github.com/Sushanto171/joystick-journals-server",
     "image": "https://i.ibb.co.com/Mf0D04b/joystick-jurnals.png"
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "Impact Makers",
     "title": "Impact Makers: Empowering Volunteer Engagement",
     "description": "ImpactMakers is a platform that aims to connect organizations, communities, and individuals who are passionate about making a difference. The platform allows users to:\n\nCreate Volunteer Need Posts: Organizations and individuals can post volunteer opportunities, providing detailed descriptions of the tasks and requirements.\n\nUpdate & Delete Posts: Users have the ability to edit or remove their volunteer posts as needed.\n\nSign Up as Volunteers: Users can browse available posts and sign up to contribute their time, skills, and passion to causes they care about.",
@@ -47,12 +97,12 @@
     ],
     "backend_technologies": ["Express.js", "MongoDB", "Vercel"],
     "live_link": "https://login-signup-form-auth.web.app/",
-    "client_repo": "https://github.com/programming-hero-web-course2/b10a11-client-side-Sushanto171",
-    "server_repo": "https://github.com/programming-hero-web-course2/b10a11-server-side-Sushanto171",
+    "client_repo": "https://github.com/Sushanto171/impact-makers",
+    "server_repo": "https://github.com/Sushanto171/impact-makers-server",
     "image": "https://i.ibb.co.com/6N8WcS0/impack-makers.png"
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Discount Pro",
     "title": "Discount PRO: A Coupon Collecting Application",
     "description": "This project is a simple Coupon Collecting Application designed to help users easily find and use discount coupons for popular E-commerce shops in Bangladesh. There are a lot of E-commerce stores that provide various types of vouchers and coupon codes for discounts. Our application will collect all the coupons available on each store so that people can easily achieve discounts and save money.",
